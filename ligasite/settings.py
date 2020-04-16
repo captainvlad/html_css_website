@@ -25,7 +25,7 @@ SECRET_KEY = 'qm%i*0&_th#3hian8i@zf6t)r-fbs^wter6=k8szx^x$l+gjl4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vladyslav.pythonanywhere.com']
 
 
 # Application definition
@@ -119,3 +119,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/Vladyslav/html_css_website/static'
