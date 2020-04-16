@@ -128,19 +128,19 @@ li a:hover {
 
 #icon_7 {
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 50%;
 }
 
 #icon_8 {
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 38%;
 }
 
 #icon_9 {
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 28%;
 }
 
@@ -391,7 +391,7 @@ table.paleBlueRows tfoot td {
 
 #photo_11 {
     position: absolute;
-    top: 85%;
+    top: 90%;
     left: 20%;
 }
 
@@ -427,13 +427,13 @@ table.paleBlueRows tfoot td {
 
 #photo_17 {
     position: absolute;
-    top: 105%;
+    top: 102%;
     left: 39%;
 }
 
 #photo_19 {
     position: absolute;
-    top: 150%;
+    top: 140%;
     left: 42.5%;
 }
 
