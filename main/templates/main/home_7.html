@@ -2,20 +2,21 @@
 
 {% block content %}
 <p3 id="university_name">HTML and CSS Basics</p3>
-<ul>
-    <li id><a href="/main" id>Main</a></li>
-    <li id><a href="/home_2" id>History of HTML</a></li>
+<hr id="hr_1">
+<ul id>
+    <li id><a href="/main">Main</a></li>
+    <li id><a href="/home_2">History of HTML</a></li>
     <li id><a href="/home_4">History of CSS</a></li>
     <li id><a href="/home_6">CSS guide</a></li>
     <li id><a href="/home_9">HTML guide</a></li>
     <li id><a href="/home_11">Useful references</a></li>
     <li id><a href="/home_12">Navigation</a></li>
 </ul>
-<hr>
-<img id="icon" src="https://pbs.twimg.com/profile_images/1107654320043057152/yR6FxY5C.png" alt="Логотип Відкритого Університету"
+<hr id="hr_2">
+
+<img id="icon" src="https://pbs.twimg.com/profile_images/1107654320043057152/yR6FxY5C.png"
      height="42" width="42">
 <img id="background_1" src= "https://wallpaperaccess.com/full/796832.jpg" >
-
 <article id="article_1">
     <pre>                       <b>What is CSS?</b>
                                     - CSS stands for Cascading Style Sheets
@@ -32,9 +33,10 @@
                                         &ltp&gtThis is a paragraph.&lt/p&gt
                                         &lth1&gtThis is a heading&lt/h1&gt
                                         &ltp&gtThis is a paragraph.&lt/p&gt
-                         When tags like &ltfont&gt, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites,
-                         where fonts and color information were added to every single page, became a long and expensive process. To solve this problem, the World Wide Web Consortium (W3C)
-                         created CSS. CSS removed the style formatting from the HTML page!
+                         When tags like &ltfont&gt, and color attributes were added to the HTML 3.2 specification, it started a nightmare for
+                         web developers. Development of large websites, where fonts and color information were added to every single page,
+                         became a long and expensive process. To solve this problem, the World Wide Web Consortium (W3C) created CSS. CSS
+                         removed the style formatting from the HTML page!
                                 <b>CSS Saves a Lot of Work!</b>
                         The style definitions are normally saved in external .css files.
                         With an external stylesheet file, you can change the look of an entire website by changing just one file!
@@ -58,9 +60,8 @@
 <p3><a id="button_1" href="home_7">More information...</a></p3>
 <img id="photo_11" src= "https://www.w3schools.com/css/selector.gif" width="840px" height="200px">
 <img id="photo_12" src= "https://cdn4.iconfinder.com/data/icons/iconsimple-programming/512/css-512.png" width="200px" height="200px">
-<pre id="bottom_5">
-
-
-    © 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university. Contact me zadorozhnyy@ucu.edu.ua, if you want something to change.</pre>
-
+<div id="footer">
+    <pre><p>© 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university.
+        If you want something to change, please feel free to contact me at zadorozhnyy@ucu.edu.ua.</p></pre>
+</div>
 {% endblock %}

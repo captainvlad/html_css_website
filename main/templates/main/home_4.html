@@ -2,57 +2,59 @@
 
 {% block content %}
 <p3 id="university_name">HTML and CSS Basics</p3>
-<hr>
-<ul>
-    <li id><a href="/main" id>Main</a></li>
-    <li id><a href="/home_2" id>History of HTML</a></li>
+<hr id="hr_1">
+<ul id>
+    <li id><a href="/main">Main</a></li>
+    <li id><a href="/home_2">History of HTML</a></li>
     <li id><a href="/home_4">History of CSS</a></li>
     <li id><a href="/home_6">CSS guide</a></li>
     <li id><a href="/home_9">HTML guide</a></li>
     <li id><a href="/home_11">Useful references</a></li>
     <li id><a href="/home_12">Navigation</a></li>
 </ul>
-<hr>
-<img id="icon" src="https://pbs.twimg.com/profile_images/1107654320043057152/yR6FxY5C.png" alt="Логотип Відкритого Університету"
+<hr id="hr_2">
+
+<img id="icon" src="https://pbs.twimg.com/profile_images/1107654320043057152/yR6FxY5C.png"
      height="42" width="42">
-<img id="background_1" src= "https://wallpaperaccess.com/full/796832.jpg" >
+
+<img id="background_1" src="https://wallpaperaccess.com/full/796832.jpg">
 <img id="background_2" src= "https://wallpaperaccess.com/full/796832.jpg" >
 <article id="article_1">
     <pre>                                                                                                                                           <b>The CSS history</b>
-            The saga of CSS starts in 1994. Håkon Wium Lie works at CERN – the cradle of the Web – and the Web is starting to be used as a
-            platform for electronic publishing. One crucial part of a publishing platform is missing, however: There is no way to style
-            documents. For example, there is no way to describe a newspaper-like layout in a Web page. Having worked on personalized news-
-            paper presentations at the MIT Media Laboratory, Håkon saw the need for a style sheet language for the Web.
-            Style sheets in browsers were not an entirely new idea. The separation of document structure from the document's layout had
-            been a goal of HTML from its inception in 1990. Tim Berners-Lee wrote his NeXT browser/editor in such a way that he could
-            determine the style with a simple style sheet. However, he didn't publish the syntax for the style sheets, considering it a
-            matter for each browser to decide how to best display pages to its users. In 1992, Pei Wei developed a browser called Viola,
-            which had its own style sheet language. However, the browsers that followed offered their users fewer and fewer options to
-            influence the style. In 1993, NCSA Mosaic, the browser that made the Web popular, came out. Stylewise, however, it was a backward
-            step because it only allowed its users to change certain colors and fonts. Meanwhile, writers of Web pages complained that
-            they didn't have enough influence over how their pages looked. One of the first
-            questions from an author new to the Web was how to change fonts and colors of elements. At that time, HTML did not provide
-            this functionality – and rightfully so. This excerpt from a message sent to the www-talk mailing list early in 1994 gives a
-            sense of the tensions between authors and implementors:
-            The message is available from the archives at http://​www.​webhistory.​org/​www.lists/​www-talk.1994q1/​0648.html
+            The saga of CSS starts in 1994. Håkon Wium Lie works at CERN – the cradle of the Web – and the Web is starting
+            to be used as a platform for electronic publishing. One crucial part of a publishing platform is missing,
+            however: There is no way to style documents. For example, there is no way to describe a newspaper-like layout
+            in a Web page. Having worked on personalized newspaper presentations at the MIT Media Laboratory, Håkon
+            saw the need for a style sheet language for the Web. Style sheets in browsers were not an entirely new idea.
+            The separation of document structure from the document's layout had been a goal of HTML from its inception
+            in 1990. Tim Berners-Lee wrote his NeXT browser/editor in such a way that he could determine the style
+            with a simple style sheet. However, he didn't publish the syntax for the style sheets, considering it a
+            matter for each browser to decide how to best display pages to its users. In 1992, Pei Wei developed a
+            browser called Viola, which had its own style sheet language. However, the browsers that followed offered
+            their users fewer and fewer options to influence the style. In 1993, NCSA Mosaic, the browser that made the
+            Web popular, came out. Stylewise, however, it was a backward step because it only allowed its users to change
+            certain colors and fonts. Meanwhile, writers of Web pages complained that they didn't have enough influence
+            over how their pages looked. One of the first questions from an author new to the Web was how to change fonts
+            and colors of elements. At that time, HTML did not provide this functionality – and rightfully so. This excerpt
+            from a message sent to the www-talk mailing list early in 1994 gives a sense of the tensions between authors
+            and implementors: The message is available from the archives at http://​www.​webhistory.​org/​www.lists/​www-talk.1994q1/​0648.html
 
 
             <i>In fact, it has been a constant source of delight for me over the past year to get to continually tell hordes (literally)
         of people who want to -- strap yourselves in, here it comes -- control what their documents look like in ways that would be
                 trivial in TeX, Microsoft Word, and every other common text processing environment: "Sorry, you're screwed."</i>
 
-            The author of the message was Marc Andreessen, one of the programmers behind NCSA Mosaic. He later became a co-founder of Netscape,
-            a company eager to fulfill the request of authors.
-            On October 13, 1994, Marc Andreessen announced to www-talk that the first beta release of Mozilla (which later turned into Netscape
-            Navigator) was available for testing. Among the new tags the new browser supported was center, and more tags were to follow shortly.
-            the first draft of the Cascading HTML Style Sheets proposal. Behind the scenes, Dave Raggett (the main architect of HTML 3.0) had
-            encouraged the release of the draft to go out before the
-            The original is online. Three days before Netscape announced the availability of its new browser, Håkon published upcoming Mosaic
-            and the Web conference in Chicago. Dave had realized that HTML would and should never turn into a page-description language and
-            that a more purpose-built mechanism was needed to satisfy requirements from authors. Although the first version of the document was
-            immature, it provided a useful basis for discussion.
-            The Argo browser was part of a project to make the Internet accessible to scholars in the Humanities. It featured plug-ins (which
-            it called applets) before Netscape added them.</pre>
+            The author of the message was Marc Andreessen, one of the programmers behind NCSA Mosaic. He later became
+            a co-founder of Netscape, a company eager to fulfill the request of authors.
+            On October 13, 1994, Marc Andreessen announced to www-talk that the first beta release of Mozilla (which
+            later turned into Netscape Navigator) was available for testing. Among the new tags the new browser supported
+            was center, and more tags were to follow shortly. The first draft of the Cascading HTML Style Sheets proposal.
+            The original is online. Three days before Netscape announced the availability of its new browser, Håkon
+            published upcoming Mosaic and the Web conference in Chicago. Dave had realized that HTML would and should
+            never turn into a page-description language and that a more purpose-built mechanism was needed to satisfy
+            requirements from authors. Although the first version of the document was immature, it provided a useful basis
+            for discussion. The Argo browser was part of a project to make the Internet accessible to scholars in the
+            Humanities. It featured plug-ins (which it called applets) before Netscape added them.</pre>
     <img id="photo_7" src= "https://www.w3.org/Style/CSS20/950628c-W3C.jpg" width="300px" height="240px">
     <pre id="history_css">
             See Stream-based Style sheet Proposal and Argo: summary of features. Among the people who responded to the first draft of CSS was
@@ -89,11 +91,12 @@
             the mailing list. And after 20 years, more than 80,000!
         </pre>
 </article>
-<p3><a id="button_1" href="http://127.0.0.1:8000/home_5">More information...</a></p3>
+<p3><a id="button_1" href="/home_5">More information...</a></p3>
 <img id="photo_8" src= "https://upload.wikimedia.org/wikipedia/commons/9/96/H%C3%A5kon-Wium-Lie-2009-03.jpg" width="300px" height="240px">
 <img id="photo_9" src= "https://cdn.iconscout.com/icon/free/png-512/css-118-569410.png" width="240px" height="300px">
-<pre id="bottom_7">
 
-
-    © 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university. Contact me zadorozhnyy@ucu.edu.ua, if you want something to change.</pre>
+<div id="footer_2">
+    <pre><p>© 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university.
+        If you want something to change, please feel free to contact me at zadorozhnyy@ucu.edu.ua.</p></pre>
+</div>
 {% endblock %}
