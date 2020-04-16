@@ -1,0 +1,367 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+hr {
+    position: relative;
+    width: 100%;
+}
+
+#icon {
+    position: relative;
+    bottom:53px;
+}
+
+#university_name {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    left: 40%;
+}
+
+#text_0, #text_1, #text_2 {
+    position: relative;
+    font-size: 20px;
+    font-family: "Century Schoolbook L";
+}
+
+#icon_3, #icon_6, #icon_9 {
+    position: relative;
+    left: 35%;
+    bottom: 20px;
+}
+
+#icon_2, #icon_5, #icon_8 {
+    position: relative;
+    left: 30%;
+    bottom: 20px;
+}
+
+#icon_1, #icon_4, #icon_7 {
+    position: relative;
+    left: 25%;
+    bottom: 20px;
+}
+
+#background_1 {
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+}
+
+#background_2 {
+    width: 100%;
+    position: relative;
+    bottom: 80px;
+}
+
+#article_1 {
+    margin-left: 15%;
+    background-color: white;
+    width: 65%;
+    line-height: 30px;
+    position: absolute;
+    top: 15%;
+}
+
+#article_2 {
+    background-color: white;
+    width: 35%;
+    line-height: 30px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+#article_2 pre {
+    font-family: SansSerif;
+}
+
+#article_1 pre {
+    font-family: SansSerif;
+}
+
+#photo_1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+#photo_2, #photo_20 {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+}
+
+#photo_3 {
+    position: absolute;
+    top: 85%;
+    left: 55%;
+}
+
+#image_1 {
+    position: absolute;
+    top: 80%;
+    left: 55%;
+}
+
+#image_2 {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+}
+
+#hr2 {
+    color: black;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    top: 139%;
+    width: 99.25%;
+}
+
+#bottom, #bottom_2 {
+    position: absolute;
+    color: white;
+    font-family: "Century Schoolbook L";
+    top: 140%;
+    left: 1%;
+}
+
+#bottom_4 {
+    color: white;
+    background-color: black;
+    font-family: "Century Schoolbook L";
+    height: 80px;
+    position: absolute;
+    top: 265%;
+    width: 99.2%;
+}
+
+#bottom_7 {
+    color: white;
+    background-color: black;
+    font-family: "Century Schoolbook L";
+    height: 80px;
+    position: absolute;
+    top: 266%;
+    width: 99.2%;
+}
+
+#button_1 {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 15%;
+    position: absolute;
+    right: 25.5%;
+    top: 45%;
+}
+
+#button_1:hover {
+    background-color: grey;
+    text-decoration: none;
+}
+
+#bottom_3 {
+    color: white;
+    background-color: black;
+    font-family: "Century Schoolbook L";
+    height: 80px;
+    position: absolute;
+    top: 265%;
+    width: 99.2%;
+}
+
+#photo_4 {
+    position: absolute;
+    top: 50%;
+    left: 52.5%;
+}
+
+#photo_5 {
+    position: absolute;
+    top: 160%;
+    left: 60%;
+}
+
+#photo_6 {
+    position: absolute;
+    top: 110%;
+    left: 60%;
+}
+
+#photo_7 {
+    position: relative;
+    left: 30%;
+}
+
+#photo_8 {
+    position: absolute;
+    top: 17%;
+    left: 64%;
+}
+
+#photo_9 {
+    position: absolute;
+    left: 65%;
+    top: 95%;
+}
+
+#bottom_4 {
+    position: absolute;
+    top: 139%;
+}
+
+#bottom_5 {
+    color: white;
+    background-color: black;
+    font-family: "Century Schoolbook L";
+    height: 80px;
+    position: absolute;
+    top: 138%;
+    width: 99.2%;
+}
+
+#bottom_6 {
+    color: white;
+    background-color: black;
+    font-family: "Century Schoolbook L";
+    height: 80px;
+    position: absolute;
+    top: 118%;
+    width: 99.2%;
+}
+
+table.paleBlueRows {
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid #FFFFFF;
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table.paleBlueRows td, table.paleBlueRows th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 2px;
+}
+table.paleBlueRows tbody td {
+    font-size: 13px;
+}
+table.paleBlueRows tr:nth-child(even) {
+    background: deepskyblue;
+}
+table.paleBlueRows tr:nth-child(odd) {
+    background: darkgrey;
+}
+table.paleBlueRows thead {
+    background: #0B6FA4;
+    border-bottom: 5px solid #FFFFFF;
+}
+table.paleBlueRows thead th {
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #FFFFFF;
+}
+table.paleBlueRows thead th:first-child {
+    border-left: none;
+}
+
+table.paleBlueRows tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    background: #D0E4F5;
+    border-top: 3px solid #444444;
+}
+table.paleBlueRows tfoot td {
+    font-size: 14px;
+}
+
+#photo_10 {
+    position: absolute;
+    top: 35%;
+    left: 12%;
+}
+
+#photo_11 {
+    position: absolute;
+    top: 95%;
+    left: 25%;
+}
+
+#photo_12 {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+}
+
+#photo_13 {
+    position: absolute;
+    top: 27%;
+    left: 25%;
+}
+
+#photo_14 {
+    position: absolute;
+    top: 28%;
+    left: 72%;
+}
+
+#photo_15 {
+    position: absolute;
+    top: 110%;
+    left: 70%;
+}
+
+#photo_16 {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+#photo_17 {
+    position: absolute;
+    top: 90%;
+    left: 39%;
+}
+
+#photo_19 {
+    position: absolute;
+    top: 127%;
+    left: 42.5%;
+}
+
+#photo_18 {
+    position: absolute;
+    top: 58%;
+    left: 39%;
+}

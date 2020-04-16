@@ -1,0 +1,67 @@
+{% extends "main/homePage.html" %}
+{% block content %}
+<p3 id="university_name">HTML and CSS Basics</p3>
+<hr>
+<ul>
+    <li id><a href="http://127.0.0.1:8000/main" id="a">Main</a></li>
+    <li id><a href="http://127.0.0.1:8000/home_2/" id="a">History of HTML</a></li>
+    <li id><a href="http://127.0.0.1:8000/home_4/">History of CSS</a></li>
+    <li id><a href="http://127.0.0.1:8000/home_6">CSS guide</a></li>
+    <li id><a href="http://127.0.0.1:8000/home_9">HTML guide</a></li>
+    <li id><a href="http://127.0.0.1:8000/home_11">Useful references</a></li>
+    <li id><a href="http://127.0.0.1:8000/home_12">Navigation</a></li>
+</ul>
+<hr>
+<img id="icon" src="https://pbs.twimg.com/profile_images/1107654320043057152/yR6FxY5C.png" alt="Логотип Відкритого Університету"
+     height="42" width="42">
+<img id="background_1" src= "https://wallpaperaccess.com/full/796832.jpg" >
+
+<article id="article_1">
+         <pre>                                                                                                                                   <b>HTML | Attributes</b>
+        An attribute is used to provide extra or additional information about an element.
+                    - All HTML elements can have attributes. Attributes provide additional information about an element.
+                    - It takes two parameters : a <b>name and a value</b>. These define the properties of the element and is placed inside the opening tag of the element.
+                    The name parameter takes the name of the property we would like to assign to the element and the value takes the properties value or extent of
+                    the property names that can be aligned over the element.
+                    - Every name has some value that must be written within quotes.
+        <b>src Attribute :</b>If we want to insert an image into a webpage, then we need to use the &ltimg&gt tag and the src attribute. We will need to specify the address of
+            the image as the attribute’s value inside the double quote.
+        <b>alt Attribute :</b> As the name goes this is an alternate tag that is used to show or display something if the primary attribute i.e., the &ltimg&gt tag, fails to display the
+            value assigned to it. This can also be used to describe the image to a developer who is actually sitting at the coding end.
+        <b>The width and height Attribute :</b> This attribute is used to adjust the width and height of an image.
+        <b>The id Attribute :</b> This attribute is used to provide a unique identification to an element. Situations may arise when we will need to access a particular element which
+            may have a similar name as the others. In that case, we provide different ids to various elements so that they can be uniquely accessed. The properties extending the use of id is
+            generally used in CSS, which we will be learning later.
+        <b>The title Attribute :</b> The title attribute is used to explain an element on hovering the mouse over it. The behavior differs with various elements but generally the value is
+            displayed while loading or hovering mouse pointer over it.
+        <b>The href Attribute :</b> This attribute is used to specify a link to any address. This attribute is used along with &lta&gt tag. The link put inside the href attribute gets linked
+            to the text displayed inside the &lta&gt tag. On clicking on the text we will be redirected to the link. By default, the link gets opened in the same tag but by using the target
+            attribute and setting its value to <b>“_blank”</b>, we will be redirected to another tab or another window based on the browsers configuration.
+        <b>The style Attribute :</b> This attribute is used to provide various CSS(Cascading Style Sheets) effects to the HTML elements such as increasing font-size, changing font-family,
+            coloring etc. For a detailed explanation refer HTML | Style Tag. The program below shows few name and values that go along the style attribute.
+        <b>The lang attribute :</b> The language is declared with the lang attribute. Declaring a language is can be important for accessibility applications and search engines.
+                                                                                                                                        <b>HTML | Text Formatting</b>
+        HTML provides us with the ability for formatting text just like we do it in MS Word or any text editing software. In this article, we would go through few such options.
+        <b>Making text Bold or Strong:</b> We can make the text bold using the &ltb&gt tag. The tag uses both opening and closing tag. The text that needs to be made bold must
+             be within &ltb&gt and &lt/b&gt tag. We can also use the &ltstrong&gt tag to make the text strong, with added semantic importance. It also opens with &ltstrong&gt
+             and ends with &lt/strong&gt tag.
+        <b><i>Making text Italic or emphasize:</i></b> The &lti&gt tag is used to italicise the text. It opens with &lti&gt and ends with &lt/i&gt tag.
+                The &ltem&gt tag is used to emphasize the text, with added semantic importance. It opens with &ltem&gt and ends with &lt/em&gt tag.
+        <b>Highlighting a text:</b> It is also possible to highlight a text in HTML using the &ltmark&gt tag. It has a opening tag &ltmark&gt and a closing tag &lt/mark&gt.
+        <b>Making a text Subscript or Superscript:</b> The &ltsup&gt element is used to superscript a text and &ltsup&gt element is used to subscript a text. They
+             both have opening and a closing tag.
+        <b>Making text smaller:</b> The &ltsmall&gt element is used to make the text smaller. The text that needs to be displayed smaller should be written inside &ltsmall&gt
+             and &lt/small&gt tag.
+        <b>Striking through the text:</b> The &ltdel&gt element is used to strike through the text marking the part as deleted. It also has an opening and a closing tag.
+        <b>Adding a text:</b> The &ltins&gt element is used to underline a text marking the part as inserted or added. It also has an opening and a closing tag.
+    </pre>
+</article>
+<pre id="bottom_5">
+
+
+    © 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university. Contact me zadorozhnyy@ucu.edu.ua, if you want something to change.</pre>
+<img id="photo_14" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtngHUah7aKw-5UlVaR2_-Pw0tWtC8-CRuZw-T-AfHX_Qo9SAD&usqp=CAU"
+     height="250px" width="450px">
+<img id="photo_15" src="https://us.123rf.com/450wm/simmmax/simmmax1802/simmmax180200223/95155932-html-code-website-laptop-coding-programming-concept-vector-illustration-.jpg?ver=6"
+     height="150px" width="150px">
+{% endblock %}
