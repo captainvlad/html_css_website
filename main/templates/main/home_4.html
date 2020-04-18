@@ -1,26 +1,31 @@
 {% extends "main/homePage.html" %}
 
 {% block content %}
-<p3 id="university_name">HTML and CSS Basics</p3>
-<hr id="hr_1">
-<ul id>
-    <li id><a href="/main">Main</a></li>
-    <li id><a href="/home_2">History of HTML</a></li>
-    <li id><a href="/home_4">History of CSS</a></li>
-    <li id><a href="/home_6">CSS guide</a></li>
-    <li id><a href="/home_9">HTML guide</a></li>
-    <li id><a href="/home_11">Useful references</a></li>
-    <li id><a href="/home_12">Navigation</a></li>
-</ul>
-<hr id="hr_2">
+<div id="page_1">
+    <div id="header">
+        <h1>HTML and CSS Basics</h1>
+    </div>
 
-<img id="icon" src="https://pbs.twimg.com/profile_images/1107654320043057152/yR6FxY5C.png"
-     height="42" width="42">
+    <hr>
 
-<img id="background_1" src="https://wallpaperaccess.com/full/796832.jpg">
-<img id="background_2" src= "https://wallpaperaccess.com/full/796832.jpg" >
-<article id="article_1">
-    <pre>                                                                                                                                           <b>The CSS history</b>
+    <ul>
+        <li id><a href="/main">Main</a></li>
+        <li id><a href="/home_2">History of HTML</a></li>
+        <li id><a href="/home_4">History of CSS</a></li>
+        <li id><a href="/home_6">CSS guide</a></li>
+        <li id><a href="/home_9">HTML guide</a></li>
+        <li id><a href="/home_11">Useful references</a></li>
+        <li id><a href="/home_12">Navigation</a></li>
+        <li id><a href="/home_8">Videos</a></li>
+    </ul>
+    <hr>
+</div>
+
+<div id="page_1_1">
+    <pre>
+                                                            <b>The CSS history</b>
+
+
             The saga of CSS starts in 1994. Håkon Wium Lie works at CERN – the cradle of the Web – and the Web is starting
             to be used as a platform for electronic publishing. One crucial part of a publishing platform is missing,
             however: There is no way to style documents. For example, there is no way to describe a newspaper-like layout
@@ -54,9 +59,11 @@
             never turn into a page-description language and that a more purpose-built mechanism was needed to satisfy
             requirements from authors. Although the first version of the document was immature, it provided a useful basis
             for discussion. The Argo browser was part of a project to make the Internet accessible to scholars in the
-            Humanities. It featured plug-ins (which it called applets) before Netscape added them.</pre>
+            Humanities. It featured plug-ins (which it called applets) before Netscape added them.
+
     <img id="photo_7" src= "https://www.w3.org/Style/CSS20/950628c-W3C.jpg" width="300px" height="240px">
-    <pre id="history_css">
+    <p3><a id="button_1" href="/home_5">More information...</a></p3>
+
             See Stream-based Style sheet Proposal and Argo: summary of features. Among the people who responded to the first draft of CSS was
             Bert Bos. At that time, he was building Argo, a highly customizable browser with style sheets, and he decided to join forces with
             Håkon. Both of the two proposals look different from present-day CSS, but it is not hard to recognize the original
@@ -90,13 +97,16 @@
             have often influenced the development of the CSS specifications. Almost 10 years later, there were more than 16,000 messages in the archives of
             the mailing list. And after 20 years, more than 80,000!
         </pre>
-</article>
-<p3><a id="button_1" href="/home_5">More information...</a></p3>
-<img id="photo_8" src= "https://upload.wikimedia.org/wikipedia/commons/9/96/H%C3%A5kon-Wium-Lie-2009-03.jpg" width="300px" height="240px">
-<img id="photo_9" src= "https://cdn.iconscout.com/icon/free/png-512/css-118-569410.png" width="240px" height="300px">
+    <div id="photos">
+        <img id="photo_8" src= "https://upload.wikimedia.org/wikipedia/commons/9/96/H%C3%A5kon-Wium-Lie-2009-03.jpg" width="300px" height="240px">
+        <img id="photo_9" src= "https://cdn.iconscout.com/icon/free/png-512/css-118-569410.png" width="240px" height="300px">
+    </div>
+        <div id="footer">
+            <pre><p>
+                © 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university.
+                If you want something to change, please feel free to contact me at zadorozhnyy@ucu.edu.ua.
 
-<div id="footer_2">
-    <pre><p>© 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university.
-        If you want something to change, please feel free to contact me at zadorozhnyy@ucu.edu.ua.</p></pre>
+            </p></pre>
+        </div>
 </div>
 {% endblock %}

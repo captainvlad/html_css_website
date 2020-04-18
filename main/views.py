@@ -35,3 +35,6 @@ def respond_10(request):
 
 def respond_11(request):
     return render(request, 'main/home_12.html')
+
+def respond_12(request):
+    return render(request, 'main/home_8.html')

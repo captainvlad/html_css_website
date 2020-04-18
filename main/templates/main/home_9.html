@@ -1,40 +1,44 @@
 {% extends "main/homePage.html" %}
 {% block content %}
-<p3 id="university_name">HTML and CSS Basics</p3>
-<hr id="hr_1">
-<ul id>
-    <li id><a href="/main">Main</a></li>
-    <li id><a href="/home_2">History of HTML</a></li>
-    <li id><a href="/home_4">History of CSS</a></li>
-    <li id><a href="/home_6">CSS guide</a></li>
-    <li id><a href="/home_9">HTML guide</a></li>
-    <li id><a href="/home_11">Useful references</a></li>
-    <li id><a href="/home_12">Navigation</a></li>
-</ul>
-<hr id="hr_2">
+<div id="page_1">
+    <div id="header">
+        <h1>HTML and CSS Basics</h1>
+    </div>
 
-<img id="icon" src="https://pbs.twimg.com/profile_images/1107654320043057152/yR6FxY5C.png"
-     height="42" width="42">
-<img id="background_1" src= "https://wallpaperaccess.com/full/796832.jpg" >
+    <hr>
 
-<article id="article_1">
-    <pre>   <b>Elements and Tag</b>: HTML uses predefined tags and elements which tells the browser about content display property. If a tag is not closed then browser applies that effect till end of page.
-            For Example: &ltb&gt Hello, HTML &lt/b&gt.
-            The result of this command will be a string with bold solid black color. Tags &ltb&gt and &lt/b&gt define the behaviour of the text "Hello, HTML" inside. &ltb&gt stands for opening tag while
-            &lt/b&gt stands for closing tag.
+    <ul>
+        <li id><a href="/main">Main</a></li>
+        <li id><a href="/home_2">History of HTML</a></li>
+        <li id><a href="/home_4">History of CSS</a></li>
+        <li id><a href="/home_6">CSS guide</a></li>
+        <li id><a href="/home_9">HTML guide</a></li>
+        <li id><a href="/home_11">Useful references</a></li>
+        <li id><a href="/home_12">Navigation</a></li>
+        <li id><a href="/home_8">Videos</a></li>
+    </ul>
+    <hr>
+</div>
 
+<div id="page_1_1">
+    <pre>
 
-
-
-
-
-
-
-
+        <b>Elements and Tag</b>: HTML uses predefined tags and elements which tells the browser about content display property. If a tag is not closed then browser
+    applies that effect till end of page. For Example: &ltb&gt Hello, HTML &lt/b&gt. The result of this command will be a string with bold solid black color.
+    Tags &ltb&gt and &lt/b&gt define the behaviour of the text "Hello, HTML" inside. &ltb&gt stands for opening tag while &lt/b&gt stands for closing tag.
+    </pre>
+    <img id="photo_13" src="https://media.geeksforgeeks.org/wp-content/uploads/Untitled-drawing-1-6.png"
+         height="450px" width="750px">
 
 
 
-        <b>&ltDOCTYPE!</b> html&gt: This tag is used to tells the HTML version. This currently tells that the version is HTML 5.
+
+
+
+
+
+
+    <pre><b>        &ltDOCTYPE!</b> html&gt: This tag is used to tells the HTML version. This currently tells that the version is HTML 5.
             <b>&lthtml&gt:</b> This is called HTML root element and used to wrap all the code.
             <b>&lthead&gt:</b> Head tag contains metadata, title, page CSS etc. All the HTML elements that can be used inside the &lthead&gt element are:
                     - &ltstyle&gt                           - &lttitle&gt
@@ -62,6 +66,5 @@
     <pre><p>© 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university.
         If you want something to change, please feel free to contact me at zadorozhnyy@ucu.edu.ua.</p></pre>
 </div>
-<img id="photo_13" src="https://media.geeksforgeeks.org/wp-content/uploads/Untitled-drawing-1-6.png"
-     height="450px" width="750px">
+</div>
 {% endblock %}

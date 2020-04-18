@@ -13,4 +13,5 @@ urlpatterns = [
     url('home_10', views.respond_9, name = "index"),
     url('home_11', views.respond_10, name = "index"),
     url('home_12', views.respond_11, name = "index"),
+    url('home_8', views.respond_12, name = "index"),
 ]

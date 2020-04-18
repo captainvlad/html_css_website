@@ -1,24 +1,30 @@
 {% extends "main/homePage.html" %}
 {% block content %}
-<p3 id="university_name">HTML and CSS Basics</p3>
-<hr id="hr_1">
-<ul id>
-    <li id><a href="/main">Main</a></li>
-    <li id><a href="/home_2">History of HTML</a></li>
-    <li id><a href="/home_4">History of CSS</a></li>
-    <li id><a href="/home_6">CSS guide</a></li>
-    <li id><a href="/home_9">HTML guide</a></li>
-    <li id><a href="/home_11">Useful references</a></li>
-    <li id><a href="/home_12">Navigation</a></li>
-</ul>
-<hr id="hr_2">
+<div id="page_1">
+    <div id="header">
+        <h1>HTML and CSS Basics</h1>
+    </div>
 
-<img id="icon" src="https://pbs.twimg.com/profile_images/1107654320043057152/yR6FxY5C.png"
-     height="42" width="42">
-<img id="background_4" src= "https://wallpaperaccess.com/full/796832.jpg" >
+    <hr>
 
-<article id="article_1">
-         <pre>                                                                                                                                   <b>HTML | Attributes</b>
+    <ul>
+        <li id><a href="/main">Main</a></li>
+        <li id><a href="/home_2">History of HTML</a></li>
+        <li id><a href="/home_4">History of CSS</a></li>
+        <li id><a href="/home_6">CSS guide</a></li>
+        <li id><a href="/home_9">HTML guide</a></li>
+        <li id><a href="/home_11">Useful references</a></li>
+        <li id><a href="/home_12">Navigation</a></li>
+        <li id><a href="/home_8">Videos</a></li>
+    </ul>
+    <hr>
+</div>
+
+<div id="page_1_1">
+         <pre>
+
+                                                                <b>HTML | Attributes</b>
+
         An attribute is used to provide extra or additional information about an element.
                     - All HTML elements can have attributes. Attributes provide additional information about an element.
                     - It takes two parameters : a <b>name and a value</b>. These define the properties of the element and is placed inside
@@ -46,7 +52,9 @@
             few name and values that go along the style attribute.
         <b>The lang attribute :</b> The language is declared with the lang attribute. Declaring a language is can be important for accessibility
             applications and search engines.
-                                                                                                                                        <b>HTML | Text Formatting</b>
+
+                                                            <b>HTML | Text Formatting</b>
+
         HTML provides us with the ability for formatting text just like we do it in MS Word or any text editing software. In this article, we would
             go through few such options.
         <b>Making text Bold or Strong:</b> We can make the text bold using the &ltb&gt tag. The tag uses both opening and closing tag. The text that
@@ -66,13 +74,11 @@
         <b>Adding a text:</b> The &ltins&gt element is used to underline a text marking the part as inserted or added. It also has an opening and a
             closing tag.
     </pre>
-</article>
-<div id="footer_4">
+    <img id="photo_15" src="https://us.123rf.com/450wm/simmmax/simmmax1802/simmmax180200223/95155932-html-code-website-laptop-coding-programming-concept-vector-illustration-.jpg?ver=6"
+         height="150px" width="150px">
+    <div id="footer">
     <pre><p>© 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university.
         If you want something to change, please feel free to contact me at zadorozhnyy@ucu.edu.ua.</p></pre>
+    </div>
 </div>
-<img id="photo_14" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtngHUah7aKw-5UlVaR2_-Pw0tWtC8-CRuZw-T-AfHX_Qo9SAD&usqp=CAU"
-     height="250px" width="450px">
-<img id="photo_15" src="https://us.123rf.com/450wm/simmmax/simmmax1802/simmmax180200223/95155932-html-code-website-laptop-coding-programming-concept-vector-illustration-.jpg?ver=6"
-     height="150px" width="150px">
 {% endblock %}

@@ -1,250 +1,256 @@
 {% extends "main/homePage.html" %}
 
 {% block content %}
-<p3 id="university_name">HTML and CSS Basics</p3>
-<hr id="hr_1">
-<ul id>
-    <li id><a href="/main">Main</a></li>
-    <li id><a href="/home_2">History of HTML</a></li>
-    <li id><a href="/home_4">History of CSS</a></li>
-    <li id><a href="/home_6">CSS guide</a></li>
-    <li id><a href="/home_9">HTML guide</a></li>
-    <li id><a href="/home_11">Useful references</a></li>
-    <li id><a href="/home_12">Navigation</a></li>
-</ul>
-<hr id="hr_2">
+<div id="page_1">
+    <div id="header">
+        <h1>HTML and CSS Basics</h1>
+    </div>
 
-<img id="icon" src="https://pbs.twimg.com/profile_images/1107654320043057152/yR6FxY5C.png"
-     height="42" width="42">
-<img id="background_1" src= "https://wallpaperaccess.com/full/796832.jpg" >
+    <hr>
 
-<table class="paleBlueRows">
-<tbody><tr>
-    <th>Pattern</th>
-    <th>Matches</th>
-    <th>First defined<br>in CSS level
-    </th></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span></code></td>
-    <td>an element of type E</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">link</span></code></td>
-    <td>an E element is the source anchor of a hyperlink of which the target is not yet visited (:link) or already visited (:visited)</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">active</span></code></td>
-    <td>an E element during certain user actions</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">::</span><span class="nd">first-line</span></code></td>
-    <td>the first formatted line of an E element</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">::</span><span class="nd">first-letter</span></code></td>
-    <td>the first formatted letter of an E element</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="p">.</span><span class="nc">c</span></code></td>
-    <td>all elements with class="c"</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="p">#</span><span class="nn">myid</span></code></td>
-    <td>the element with id="myid"</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">.</span><span class="nc">warning</span></code></td>
-    <td>an E element whose class is "warning" (the document language specifies how class is determined)</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">#</span><span class="nn">myid</span></code></td>
-    <td>an E element with ID equal to "myid"</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="p">.</span><span class="nc">c</span><span class="p">#</span><span class="nn">myid</span></code></td>
-    <td>the element with class="c" and ID equal to "myid"</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span> <span class="nt">F</span></code></td>
-    <td>an F element descendant of an E element</td>
-    <td>1
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="o">*</span></code></td>
-    <td>any element</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">]</span></code></td>
-    <td>an E element with a "foo" attribute</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
-    <td>an E element whose "foo" attribute value is exactly equal to "bar"</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">~=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
-    <td>an E element whose "foo" attribute value is a list of whitespace-separated values, one of which is exactly equal to "bar"</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">|=</span><span class="s2">"en"</span><span class="o">]</span></code></td>
-    <td>an E element whose "foo" attribute has a hyphen-separated list of values beginning (from the left) with "en"</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">first-child</span></code></td>
-    <td>an E element, first child of its parent</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">lang</span><span class="o">(</span><span class="nt">fr</span><span class="o">)</span></code></td>
-    <td>an element of type E in language "fr" (the document language specifies how language is determined)</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">::</span><span class="nd">before</span></code></td>
-    <td>generated content before an E element's content</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">::</span><span class="nd">after</span></code></td>
-    <td>generated content after an E element's content</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span> <span class="o">&gt;</span> <span class="nt">F</span></code></td>
-    <td>an F element child of an E element</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span> <span class="o">+</span> <span class="nt">F</span></code></td>
-    <td>an F element immediately preceded by an E element</td>
-    <td>2
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">^=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
-    <td>an E element whose "foo" attribute value begins exactly with the string "bar"</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">$=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
-    <td>an E element whose "foo" attribute value ends exactly with the string "bar"</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">*=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
-    <td>an E element whose "foo" attribute value contains the substring "bar"</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">root</span></code></td>
-    <td>an E element, root of the document</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span></code></td>
-    <td>an E element, the n-th child of its parent</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">nth-last-child</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span></code></td>
-    <td>an E element, the n-th child of its parent, counting from the last one</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">nth-of-type</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span></code></td>
-    <td>an E element, the n-th sibling of its type</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">nth-last-of-type</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span></code></td>
-    <td>an E element, the n-th sibling of its type, counting from the last one</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">last-child</span></code></td>
-    <td>an E element, last child of its parent</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">first-of-type</span></code></td>
-    <td>an E element, first sibling of its type</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">last-of-type</span></code></td>
-    <td>an E element, last sibling of its type</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">only-child</span></code></td>
-    <td>an E element, only child of its parent</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">only-of-type</span></code></td>
-    <td>an E element, only sibling of its type</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">empty</span></code></td>
-    <td>an E element that has no children (including text nodes)</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">target</span></code></td>
-    <td>an E element being the target of the referring URI</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">enabled</span></code></td>
-    <td>a user interface element E that is enabled</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">disabled</span></code></td>
-    <td>a user interface element E that is disabled</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">checked</span></code></td>
-    <td>a user interface element E that is checked (for instance a radio-button or checkbox)</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="nt">s</span><span class="o">)</span></code></td>
-    <td>an E element that does not match simple selector s</td>
-    <td>3
-    </td></tr>
-<tr>
-    <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span> <span class="o">~</span> <span class="nt">F</span></code></td>
-    <td>an F element preceded by an E element</td>
-    <td>3
-    </td></tr></tbody>
-</table>
-
-<article id="article_2">
-        <pre> Here you can see table which shows how elements interacts and how can be used. Hope this will be of
-            some use and will help you to understand CSS syntax better. During creation of the table there
-            were used materials from Wikipedia and Geeks For Geeks sites.</pre>
-</article>
-<div id="footer">
-    <pre><p>© 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university.
-        If you want something to change, please feel free to contact me at zadorozhnyy@ucu.edu.ua.</p></pre>
+    <ul>
+        <li id><a href="/main">Main</a></li>
+        <li id><a href="/home_2">History of HTML</a></li>
+        <li id><a href="/home_4">History of CSS</a></li>
+        <li id><a href="/home_6">CSS guide</a></li>
+        <li id><a href="/home_9">HTML guide</a></li>
+        <li id><a href="/home_11">Useful references</a></li>
+        <li id><a href="/home_12">Navigation</a></li>
+        <li id><a href="/home_8">Videos</a></li>
+    </ul>
+    <hr>
 </div>
-<img id="photo_10" src= "https://starecat.com/content/wp-content/uploads/me-makes-small-change-to-the-css-my-websites-looks-ridiculous.jpg" width="340px" height="500px">
+
+<div id="page_1_2">
+
+    <table class="paleBlueRows">
+    <tbody><tr>
+        <th>Pattern</th>
+        <th>Matches</th>
+        <th>First defined<br>in CSS level
+        </th></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span></code></td>
+        <td>an element of type E</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">link</span></code></td>
+        <td>an E element is the source anchor of a hyperlink of which the target is not yet visited (:link) or already visited (:visited)</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">active</span></code></td>
+        <td>an E element during certain user actions</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">::</span><span class="nd">first-line</span></code></td>
+        <td>the first formatted line of an E element</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">::</span><span class="nd">first-letter</span></code></td>
+        <td>the first formatted letter of an E element</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="p">.</span><span class="nc">c</span></code></td>
+        <td>all elements with class="c"</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="p">#</span><span class="nn">myid</span></code></td>
+        <td>the element with id="myid"</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">.</span><span class="nc">warning</span></code></td>
+        <td>an E element whose class is "warning" (the document language specifies how class is determined)</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">#</span><span class="nn">myid</span></code></td>
+        <td>an E element with ID equal to "myid"</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="p">.</span><span class="nc">c</span><span class="p">#</span><span class="nn">myid</span></code></td>
+        <td>the element with class="c" and ID equal to "myid"</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span> <span class="nt">F</span></code></td>
+        <td>an F element descendant of an E element</td>
+        <td>1
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="o">*</span></code></td>
+        <td>any element</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">]</span></code></td>
+        <td>an E element with a "foo" attribute</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
+        <td>an E element whose "foo" attribute value is exactly equal to "bar"</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">~=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
+        <td>an E element whose "foo" attribute value is a list of whitespace-separated values, one of which is exactly equal to "bar"</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">|=</span><span class="s2">"en"</span><span class="o">]</span></code></td>
+        <td>an E element whose "foo" attribute has a hyphen-separated list of values beginning (from the left) with "en"</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">first-child</span></code></td>
+        <td>an E element, first child of its parent</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">lang</span><span class="o">(</span><span class="nt">fr</span><span class="o">)</span></code></td>
+        <td>an element of type E in language "fr" (the document language specifies how language is determined)</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">::</span><span class="nd">before</span></code></td>
+        <td>generated content before an E element's content</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">::</span><span class="nd">after</span></code></td>
+        <td>generated content after an E element's content</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span> <span class="o">&gt;</span> <span class="nt">F</span></code></td>
+        <td>an F element child of an E element</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span> <span class="o">+</span> <span class="nt">F</span></code></td>
+        <td>an F element immediately preceded by an E element</td>
+        <td>2
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">^=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
+        <td>an E element whose "foo" attribute value begins exactly with the string "bar"</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">$=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
+        <td>an E element whose "foo" attribute value ends exactly with the string "bar"</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="o">[</span><span class="nt">foo</span><span class="o">*=</span><span class="s2">"bar"</span><span class="o">]</span></code></td>
+        <td>an E element whose "foo" attribute value contains the substring "bar"</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">root</span></code></td>
+        <td>an E element, root of the document</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span></code></td>
+        <td>an E element, the n-th child of its parent</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">nth-last-child</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span></code></td>
+        <td>an E element, the n-th child of its parent, counting from the last one</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">nth-of-type</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span></code></td>
+        <td>an E element, the n-th sibling of its type</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">nth-last-of-type</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span></code></td>
+        <td>an E element, the n-th sibling of its type, counting from the last one</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">last-child</span></code></td>
+        <td>an E element, last child of its parent</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">first-of-type</span></code></td>
+        <td>an E element, first sibling of its type</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">last-of-type</span></code></td>
+        <td>an E element, last sibling of its type</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">only-child</span></code></td>
+        <td>an E element, only child of its parent</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">only-of-type</span></code></td>
+        <td>an E element, only sibling of its type</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">empty</span></code></td>
+        <td>an E element that has no children (including text nodes)</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">target</span></code></td>
+        <td>an E element being the target of the referring URI</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">enabled</span></code></td>
+        <td>a user interface element E that is enabled</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">disabled</span></code></td>
+        <td>a user interface element E that is disabled</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">checked</span></code></td>
+        <td>a user interface element E that is checked (for instance a radio-button or checkbox)</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="nt">s</span><span class="o">)</span></code></td>
+        <td>an E element that does not match simple selector s</td>
+        <td>3
+        </td></tr>
+    <tr>
+        <td><code class="mw-highlight mw-highlight-lang-css" id="" style="" dir="ltr"><span class="nt">E</span> <span class="o">~</span> <span class="nt">F</span></code></td>
+        <td>an F element preceded by an E element</td>
+        <td>3
+        </td></tr></tbody>
+    </table>
+    <img id="photo_10" src= "https://starecat.com/content/wp-content/uploads/me-makes-small-change-to-the-css-my-websites-looks-ridiculous.jpg" width="340px" height="500px">
+
+    <pre> Here you can see table which shows how elements interacts and how can be used. Hope this will be of
+            some use and will help you to understand CSS syntax better. During creation of the table there
+            were used materials from Wikipedia and Geeks For Geeks sites.
+
+    </pre>
+    <div id="footer">
+                <pre><p>© 2020. Designed by Vladyslav Zadorozhnyy as a part of homework from web development at UCU university.
+                    If you want something to change, please feel free to contact me at zadorozhnyy@ucu.edu.ua.</p></pre>
+    </div>
+</div>
 
 {% endblock %}
